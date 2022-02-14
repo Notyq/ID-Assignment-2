@@ -1,3 +1,8 @@
+footer {
+  position: relative;
+  margin-top: 200px;
+}
+
 .navbar {
   background-color: transparent;
   box-shadow: 0px 1px 20px #eaeaea;
@@ -111,24 +116,118 @@
 }
 
 /* footer */
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+}
+
 .footer {
-  background: #db332a;
-  text-align: center;
-  padding: 2.5em 0;
-  font-size: 15px;
+  background-color: #db322a;
+  padding: 70px 0;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
   color: white;
-  font-family: "Dancing Script", cursive;
-  font-family: "Source Sans Pro", sans-serif;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 300;
+  position: relative;
 }
 
-.footer__link {
-  font-weight: 400;
+.footer-col h4:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: aliceblue;
+  height: 2px;
+  box-sizing: border-box;
+  width: 60px;
 }
 
-.footer__link:hover {
-  opacity: 0.7;
+.footer-col ul li {
+  margin-bottom: 10px;
 }
 
-.footer__link:hover {
-  text-decoration: underline;
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: darkgray;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: white;
+  transition: 0.3s;
+}
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+.footer-form {
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+  margin-bottom: 50px;
+}
+
+.footer-form .far {
+  font-size: 18px;
+  margin-right: 10px;
+  color: white;
+}
+
+.footer-form input {
+  width: 100%;
+  background: transparent;
+  color: white;
+  border: 0;
+  outline: none;
+}
+
+.footer-form button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.footer-form button .fas {
+  font-size: 16px;
+  color: white;
 }
