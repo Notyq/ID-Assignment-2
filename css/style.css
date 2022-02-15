@@ -4,7 +4,7 @@
 } */
 
 .navbar {
-  background-color: transparent;
+  background-color: white;
   box-shadow: 0px 1px 20px #eaeaea;
   display: inline-block;
   font-weight: 400;
@@ -19,8 +19,12 @@
 
 /* SLIDESHOW */
 
-*{
+* {
   box-sizing: border-box;
+}
+
+.img {
+  margin-left: 50px;
 }
 
 /* Slideshow container */
@@ -33,19 +37,26 @@
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
+  color: #24262b;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
   width: 100%;
   text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-family: "Lato", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 /* Hide the images by default */
-/* .mySlides {
+/*.mySlides {
   display: none;
-} */
+}*/
+
+.mySlides {
+  margin-left: 100px;
+}
 
 /* Next & previous buttons */
 .prev,
@@ -55,6 +66,7 @@
   top: 50%;
   width: auto;
   margin-top: -22px;
+  margin-left: 100px;
   padding: 16px;
   color: white;
   font-weight: bold;
@@ -66,7 +78,7 @@
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
+  right: 60%;
   border-radius: 3px 0 0 3px;
 }
 
@@ -94,14 +106,14 @@
 }
 
 /* Fading animation */
-.slide {
-  -webkit-animation-name: slide;
+.fade {
+  -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
 }
 
-@-webkit-keyframes slide {
+@-webkit-keyframes fade {
   from {
     opacity: 0.4;
   }
@@ -110,7 +122,7 @@
   }
 }
 
-@keyframes slide {
+@keyframes fade {
   from {
     opacity: 0.4;
   }
@@ -118,25 +130,6 @@
     opacity: 1;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* footer */
 
