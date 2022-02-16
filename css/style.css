@@ -4,7 +4,7 @@
 } */
 
 .navbar {
-  background-color: white;
+  background-color: rgb(241, 241, 241);
   box-shadow: 0px 1px 20px #eaeaea;
   display: inline-block;
   font-weight: 400;
@@ -12,62 +12,94 @@
 
 .logo .nav-item {
   font-family: "Dancing Script", cursive;
-  font-size: 20px;
+  font-size: 30px;
   color: #db322a;
   margin-left: 15px;
 }
 
-/* SLIDESHOW */
-
-* {
-  box-sizing: border-box;
+body {
+  background-color: #cf926f8c;
 }
 
-.img {
-  margin-left: 50px;
-}
+/* carousel */
 
-/* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
-  margin: auto;
-  padding-top: 5rem;
+  margin: 0px auto;
+  margin-top: 100px;
 }
 
-/* Caption text */
-.text {
-  color: #24262b;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../img/alyssa-strohmann-TS--uNw-JqE-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 770px;
+}
+
+.hero-image2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../img/jordan-nix-4Hmj9gkyM6c-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 1000px;
+  
+}
+
+.hero-image3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../img/freestocks-_3Q3tsJ01nc-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 900px;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding-top: 18em;
   text-align: center;
-  font-family: "Dancing Script", cursive;
-  font-family: "Lato", sans-serif;
-  font-family: "Source Sans Pro", sans-serif;
 }
 
-/* Hide the images by default */
-/*.mySlides {
-  display: none;
-}*/
-
-.mySlides {
-  margin-left: 100px;
+.hero-text h1 {
+  font-size: 2em;
+  font-family: "Helvetica Neue";
+  margin-top: 100px;
 }
 
-/* Next & previous buttons */
+.heroButton {
+  margin-top: 8px;
+  border: none;
+  outline: none;
+  display: inline-block;
+  padding: 15px 45px;
+  border-radius: 50px;
+  color: black;
+  background-color: #ddd;
+  cursor: pointer;
+  transition: transform 0.3s;
+  font-family: "Ubuntu";
+}
+
+.hero-text .heroButton:hover {
+  transform: translateY(5px);
+  background-color: #555;
+  color: floralwhite;
+}
+
 .prev,
 .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -22px;
-  margin-left: 100px;
   padding: 16px;
+  margin-top: -22px;
   color: white;
   font-weight: bold;
   font-size: 18px;
@@ -76,23 +108,30 @@
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
-  right: 60%;
+  right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* The dots/bullets/indicators */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
 .dot {
   cursor: pointer;
-  height: 5px;
-  width: 5px;
+  height: 15px;
+  width: 15px;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
@@ -103,32 +142,6 @@
 .active,
 .dot:hover {
   background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 /* footer */
