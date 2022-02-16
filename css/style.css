@@ -1,10 +1,5 @@
-/* footer {
-  position: relative;
-  margin-top: 200px;
-} */
-
 .navbar {
-  background-color: rgb(241, 241, 241);
+  background-color: #cf926f8c;
   box-shadow: 0px 1px 20px #eaeaea;
   display: inline-block;
   font-weight: 400;
@@ -18,7 +13,7 @@
 }
 
 body {
-  background-color: #cf926f8c;
+  background-color: white;
 }
 
 /* carousel */
