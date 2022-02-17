@@ -20,10 +20,6 @@ body {
 
 /* product page */
 
-.col-3 img {
-  width: 100%;
-}
-
 .title {
   padding-top: 120px;
   font-family: "Quicksand", sans-serif;

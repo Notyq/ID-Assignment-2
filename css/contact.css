@@ -1,411 +1,420 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap");
+
 .navbar {
-    background-color: #cf926f8c;
-    box-shadow: 0px 1px 20px #eaeaea;
-    display: inline-block;
-    font-weight: 400;
-  }
-  
-  .logo .nav-item {
-    font-family: "Dancing Script", cursive;
-    font-size: 30px;
-    color: #db322a;
-    margin-left: 15px;
-  }
-  
-  body {
-    background-color: white;
-  }
-  
-
-
-
-
-
-  /* Contact Page */
- 
-  .contact {
-      font-family: "Poppins";
-      color: rgb(37, 35, 35);
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-  }
-    
-  .contacttitle {
-      margin-top: 80px;
-      font-size: 70px;
-      font-family: "Quicksand", sans-serif;
-      text-align: center;
-      color: rgb(54, 11, 11);
-  }
-  
-  .block-wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      margin-top: -70px;
-  }
-  
-  .blockimage{
-      height: 100px;
-      width: 100px;
-      left: 0px;
-      margin: auto;
-      padding:10px;
-      min-width: 100px;
-  }
-  
-  .block1, .block2, .block3, .block4{
-      font-family: "Poppins";
-      transition: 0.5s ease;
-      border-radius: 20px;
-      display: flex;
-      width: 200px;
-      margin: 70px;
-      margin-bottom: -50px;
-      padding: 20px;
-      padding-right: 260px;
-  }
-  
-  .block1 {
-    background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
-  }
-  .block1:hover {
-    background-image: linear-gradient(to bottom, #f6d365 0%, #fda085 51%, #f6d365 100%); /* change the direction of the change here */
-    transform: scale(1.03);
-  }
-  
-  .block2 {
-    background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
-  }
-  .block2:hover{
-    background-image: linear-gradient(to bottom, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
-    transform: scale(1.03);
-  }
-  
-  .block3 {
-    background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
-  }
-  .block3:hover{
-    background-image: linear-gradient(to bottom, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
-    transform: scale(1.03);
-  }
-
-  .block4 {
-    background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
-  }
-  .block4:hover{
-    background-image: linear-gradient(to bottom, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
-    transform: scale(1.03);
-  }
-  
-  .card-title{
-      color: #D53535;
-      white-space: nowrap;
-      font-weight: 10000;
-  }
-
-  .card-content{
-      color: black;
-      font-weight: 500;
-      font-size: large;
-  }
-  
-  .col-text{
-      text-align: left;
-      margin-left: 8px;
-      color: white;
-  }
-  
-  .social-media{
-      list-style: none;
-      display: flex;
-      margin-left: -30px;
-  }
-  
-  .block2 .social-media a{
-      color: black;
-      font-size: 40px;
-      margin: 20px;
-      margin-left: 4px;
-  }
-
-  .block1, .block2, .block3, .block4{
-    flex-basis: 35%;
+  background-color: #cf926f8c;
+  box-shadow: 0px 1px 20px #eaeaea;
+  display: inline-block;
+  font-weight: 400;
 }
 
-  
-    /* form */
-  
-  .block5{
-      font-family: Ubuntu;
-      transition: 0.5s ease;
-      border-radius: 20px;
-      display: flex;
-      background-color: #444444;
-      flex-basis: 30%;
-      margin: 70px;
-      margin-bottom: 20px;
-      padding: 30px;
-  }
-  
-  .block5title{
-      color: white;
-  } 
+.logo .nav-item {
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
+  color: #db322a;
+  margin-left: 15px;
+}
 
+body {
+  background-color: white;
+}
 
-  
-  .formname, .formemail, .formsubj, .formmsg{
-      border-radius: 6px;
-      padding: 20px;
-      padding-right: 400px;
-      margin-bottom: 10px;
-      background: #BCBCBC;
-      display: flex;
-  }
-  
-  ::placeholder{
-      color: black;
-  }
-  
-  .formsubmit{
-      border-radius: 25px;
-      padding: 10px;
-      padding-right: 50px;
-      padding-left: 50px;
-      cursor: pointer;
-      background: rgb(184, 57, 57);
-  }
-  
-  .formsubmit:hover{
-      background: #74ffb9c0;
-      box-shadow: 0.4rem 0.4rem 0.2rem #53615ac0;
-  }
-  
-  /* Media Queries */
+/* Contact Page */
 
+.small-container {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
 
-  @media (max-width: 1270px){
-      .block1, .block2, .block3, .block4{
-          flex-basis: 38%;
-          
-      }
+.contact {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.contacttitle {
+  padding-top: 120px;
+  font-family: "Quicksand", sans-serif;
+  color: #db322a;
+  border-bottom: 5px solid #db322a;
+  padding-bottom: 10px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.block-wrapper {
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: -70px;
+}
+
+.blockimage {
+  height: 100px;
+  width: 100px;
+  left: 0px;
+  margin: auto;
+  padding: 10px;
+  min-width: 100px;
+}
+
+.block1,
+.block2,
+.block3,
+.block4 {
+  font-family: "Poppins";
+  transition: 0.5s ease;
+  border-radius: 20px;
+  display: flex;
+  width: 200px;
+  margin: 70px;
+  margin-bottom: -50px;
+  padding: 20px;
+  padding-right: 260px;
+  background-color: #cf926f8c;
+  box-shadow: 0px 1px 20px #eaeaea;
+  font-family: "Quicksand", sans-serif;
+}
+
+.card-title {
+  color: #d53535;
+  white-space: nowrap;
+  font-weight: 10000;
+}
+
+.card-content {
+  color: black;
+  font-weight: 500;
+  font-size: large;
+}
+
+.col-text {
+  text-align: left;
+  margin-left: 8px;
+  color: white;
+}
+
+.social-media {
+  list-style: none;
+  display: flex;
+  margin-left: -30px;
+}
+
+.block2 .social-media a {
+  color: black;
+  font-size: 40px;
+  margin: 20px;
+  margin-left: 4px;
+}
+
+.block2 .social-media a:hover {
+  transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
+  transform: scale(1.1);
+  opacity: 0.5;
+}
+
+.block1,
+.block2,
+.block3,
+.block4 {
+  flex-basis: 35%;
+}
+
+/* form */
+
+.block5 {
+  min-width: 1000px;
+  min-height: 500px;
+  font-family: Ubuntu;
+  transition: 0.5s ease;
+  border-radius: 20px;
+  display: flex;
+  background-color: #cf926f8c;
+  flex-basis: 30%;
+  margin: 70px;
+  margin-bottom: 20px;
+  padding: 30px;
+}
+
+.block5title {
+  color: white;
+}
+
+.formname,
+.formemail,
+.formsubj,
+.formmsg {
+  border: none;
+  border-radius: 6px;
+  padding: 20px;
+  padding-right: 400px;
+  margin-bottom: 10px;
+  background: white;
+  display: flex;
+}
+
+::placeholder {
+  color: #dbdbdb;
+}
+
+.formclass {
+  min-width: 900px;
+}
+
+.formclass input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 17px;
+  padding-left: 20px;
+  border: 1px solid lightgrey;
+  transition: all 0.3s ease;
+}
+
+.formsubmit {
+  border-radius: 25px;
+  padding: 10px;
+  padding-right: 50px;
+  padding-left: 50px;
+  cursor: pointer;
+  background: #db322a;
+  color: white;
+}
+
+.formsubmit:active {
+  transform: scale(0.95);
+  opacity: 1;
+}
+
+/* Media Queries */
+
+@media (max-width: 1270px) {
+  .block1,
+  .block2,
+  .block3,
+  .block4 {
+    flex-basis: 38%;
   }
-  
-  @media (max-width: 984px){
-      .block1, .block2, .block3, .block4{
-          flex-basis: 52%;
-          
-      }
+}
+
+@media (max-width: 984px) {
+  .block1,
+  .block2,
+  .block3,
+  .block4 {
+    flex-basis: 52%;
   }
-  
-  @media (max-width: 776px){
-      .block1, .block2, .block3, .block4{
-          flex-basis: 66%;
-          
-      }
-  
-      .formname, .formemail, .formsubj, .formmsg{
-          border-radius: 6px;
-          padding: 20px;
-          padding-right: 200px;
-          margin-bottom: 10px;
-          background: #BCBCBC;
-          display: flex;
-      }
-  }
-  
-  @media (max-width: 590px){
-      .block1, .block2, .block3, .block4{
-          flex-basis: 75%;
-      }
-  
-      .blockimage{
-          height: 70px;
-          width: 70px;
-          left: 0px;
-          margin: auto;
-          padding:10px;
-          min-width: 100px;
-          margin-left: -30px;
-      }
-  
-      .card-title{
-          font-size: 20px;
-      }
-  
-      .card-content{
-          font-size: 11px;
-      }
-  
-      .block2 .social-media a{
-          color: white;
-          font-size: 20px;
-          margin: 20px;
-          margin-left: 4px;
-      }
-  
-      .formname, .formemail, .formsubj, .formmsg{
-          border-radius: 6px;
-          padding: 20px;
-          padding-right: 130px;
-          margin-bottom: 10px;
-          background: #BCBCBC;
-          display: flex;
-      }
-  }
-  
-  @media (max-width: 455px){
-      .block5title{
-          font-size: 20px;
-      }
-  
-  
-      .formname, .formemail, .formsubj, .formmsg{
-          border-radius: 6px;
-          padding: 20px;
-          padding-right: 20px;
-          margin-bottom: 10px;
-          background: #BCBCBC;
-          display: flex;
-      }
-  
-      .formsubmit{
-          border-radius: 25px;
-          padding: 10px;
-          padding-right: 20px;
-          padding-left: 20px;
-          cursor: pointer;
-          background: rgb(184, 57, 57);
-      }
+}
+
+@media (max-width: 776px) {
+  .block1,
+  .block2,
+  .block3,
+  .block4 {
+    flex-basis: 66%;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  /* footer */
-  
-  .container {
-    max-width: 1170px;
-    margin: auto;
-  }
-  
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  ul {
-    list-style: none;
-  }
-  
-  .footer {
-    background-color: #db322a;
-    padding: 70px 0;
-  }
-  
-  .footer-col {
-    width: 25%;
-    padding: 0 15px;
-  }
-  
-  .footer-col h4 {
-    font-size: 18px;
-    color: white;
-    text-transform: capitalize;
-    margin-bottom: 35px;
-    font-weight: 300;
-    position: relative;
-  }
-  
-  .footer-col h4:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    background-color: aliceblue;
-    height: 2px;
-    box-sizing: border-box;
-    width: 60px;
-  }
-  
-  .footer-col ul li {
+  .formname,
+  .formemail,
+  .formsubj,
+  .formmsg {
+    border-radius: 6px;
+    padding: 20px;
+    padding-right: 200px;
     margin-bottom: 10px;
-  }
-  
-  .footer-col ul li a {
-    font-size: 16px;
-    text-transform: capitalize;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 300;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .footer-col ul li a:hover {
-    color: #ffffff;
-    opacity: 0.6;
-  }
-  
-  .footer-col .social-links a {
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    background-color: darkgray;
-    margin: 0 10px 10px 0;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    color: white;
-    transition: 0.3s;
-  }
-  .footer-col .social-links a:hover {
-    color: #24262b;
-    background-color: #ffffff;
-  }
-  
-  .footer-form {
-    padding-bottom: 15px;
+    background: #bcbcbc;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid white;
-    margin-bottom: 50px;
   }
-  
-  .footer-form .far {
-    font-size: 18px;
-    margin-right: 10px;
+}
+
+@media (max-width: 590px) {
+  .block1,
+  .block2,
+  .block3,
+  .block4 {
+    flex-basis: 75%;
+  }
+
+  .blockimage {
+    height: 70px;
+    width: 70px;
+    left: 0px;
+    margin: auto;
+    padding: 10px;
+    min-width: 100px;
+    margin-left: -30px;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .card-content {
+    font-size: 11px;
+  }
+
+  .block2 .social-media a {
     color: white;
+    font-size: 20px;
+    margin: 20px;
+    margin-left: 4px;
   }
-  
-  .footer-form input {
-    width: 100%;
-    background: transparent;
-    color: white;
-    border: 0;
-    outline: none;
+
+  .formname,
+  .formemail,
+  .formsubj,
+  .formmsg {
+    border-radius: 6px;
+    padding: 20px;
+    padding-right: 130px;
+    margin-bottom: 10px;
+    background: #bcbcbc;
+    display: flex;
   }
-  
-  .footer-form button {
-    background: transparent;
-    border: 0;
-    outline: none;
+}
+
+@media (max-width: 455px) {
+  .block5title {
+    font-size: 20px;
+  }
+
+  .formname,
+  .formemail,
+  .formsubj,
+  .formmsg {
+    border-radius: 6px;
+    padding: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+    background: #bcbcbc;
+    display: flex;
+  }
+
+  .formsubmit {
+    border-radius: 25px;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
     cursor: pointer;
+    background: rgb(184, 57, 57);
   }
-  
-  .footer-form button .fas {
-    font-size: 16px;
-    color: white;
-  }
+}
+
+/* footer */
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer {
+  background-color: #db322a;
+  padding: 70px 0;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: white;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 300;
+  position: relative;
+}
+
+.footer-col h4:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: aliceblue;
+  height: 2px;
+  box-sizing: border-box;
+  width: 60px;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: darkgray;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: white;
+  transition: 0.3s;
+}
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+.footer-form {
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+  margin-bottom: 50px;
+}
+
+.footer-form .far {
+  font-size: 18px;
+  margin-right: 10px;
+  color: white;
+}
+
+.footer-form input {
+  width: 100%;
+  background: transparent;
+  color: white;
+  border: 0;
+  outline: none;
+}
+
+.footer-form button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.footer-form button .fas {
+  font-size: 16px;
+  color: white;
+}
