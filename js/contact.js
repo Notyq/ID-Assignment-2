@@ -4,6 +4,7 @@ $(document).ready(function () {
     $("#feedbackformsubmit").on("click",function(e) {
         e.preventDefault();
 
+
         let name = $("#fname").val();
         console.log(name);
         let email = $("#email").val();
