@@ -36,14 +36,14 @@
       font-size: 60px;
       font-family: "Ubuntu";
       text-align: center;
-      color: black;
+      color: rgb(54, 11, 11);
   }
   
   .block-wrapper {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
-      margin-top: -100px;
+      margin-top: -70px;
   }
   
   .blockimage{
@@ -60,8 +60,6 @@
       transition: 0.5s ease;
       border-radius: 20px;
       display: flex;
-      background-color: rgb(17, 17, 17);
-      flex-basis: 30%;
       width: 200px;
       margin: 70px;
       margin-bottom: -50px;
@@ -69,29 +67,75 @@
       padding-right: 260px;
   }
   
+  .block1 {
+    background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+  }
+  .block1:hover {
+    background-image: linear-gradient(to bottom, #f6d365 0%, #fda085 51%, #f6d365 100%); /* change the direction of the change here */
+    transform: scale(1.03);
+  }
+  
+  .block2 {
+    background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+  }
+  .block2:hover{
+    background-image: linear-gradient(to bottom, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+    transform: scale(1.03);
+  }
+  
+  .block3 {
+    background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+  }
+  .block3:hover{
+    background-image: linear-gradient(to bottom, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+    transform: scale(1.03);
+  }
+
+  .block4 {
+    background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+  }
+  .block4:hover{
+    background-image: linear-gradient(to bottom, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+    transform: scale(1.03);
+  }
+  
   .card-title{
       color: #D53535;
       white-space: nowrap;
+      font-weight: 10000;
+  }
+
+  .card-content{
+      color: black;
+      font-weight: 500;
+      font-size: large;
   }
   
   .col-text{
       text-align: left;
-      margin-left: 17px;
+      margin-left: 8px;
       color: white;
   }
   
   .social-media{
       list-style: none;
       display: flex;
+      margin-left: -30px;
   }
   
   .block2 .social-media a{
-      color: white;
-      font-size: 30px;
+      color: black;
+      font-size: 40px;
       margin: 20px;
       margin-left: 4px;
   }
+
+  .block1, .block2, .block3, .block4{
+    flex-basis: 35%;
+}
+
   
+    /* form */
   
   .block5{
       font-family: "Poppins";
@@ -107,7 +151,9 @@
   
   .block5title{
       color: white;
-  }
+  } 
+
+
   
   .formname, .formemail, .formsubj, .formmsg{
       border-radius: 6px;
@@ -137,9 +183,11 @@
   }
   
   /* Media Queries */
-  @media (max-width: 1170px){
+
+
+  @media (max-width: 1270px){
       .block1, .block2, .block3, .block4{
-          flex-basis: 40%;
+          flex-basis: 38%;
           
       }
   }
