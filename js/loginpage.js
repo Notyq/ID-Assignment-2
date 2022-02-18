@@ -46,7 +46,7 @@ $(document).ready(function (){
             }
 
             if (loginSuccess === false){
-                alert("Login Failed")
+                alert("Login Failed, Invalid Email or Password")
             }
 
 
@@ -80,7 +80,7 @@ $(document).ready(function () {
 
         if(email === emailconfirm && password === passwordconfirm){
 
-            if(email.includes("@" && ".com")){
+            if(email.includes("@")){
                 
                 let jsondata ={
                     "email": email,
@@ -121,7 +121,7 @@ $(document).ready(function () {
         }
 
         else{
-            alert("Confirm your email and password correctly");
+            alert("Email or Password Does Not Match");
         }
 
         
