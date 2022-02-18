@@ -1,6 +1,66 @@
 const APIKEY = "620e79e534fd62156585874a";
 
+//Login Page API
+$(document).ready(function (){
+    $("#loginid").on("click",function(e){
+        e.preventDefault();
 
+        var loginSuccess = false;
+
+        let loginemail = $("#loginemail").val();
+        let loginpassword = $("#loginpassword").val();
+
+        console.log(loginemail);
+        console.log(loginpassword);
+
+        let inputdata ={
+            "email": loginemail,
+            "password": loginpassword
+        }
+
+
+        var settings = {
+        "async": true,
+        "crossDomain": true,
+        "url": "https://idasg2databaselogin-8a41.restdb.io/rest/signuplogin",
+        "method": "GET",
+        "headers": {
+        "content-type": "application/json",
+        "x-apikey": APIKEY,
+        "cache-control": "no-cache"
+        }
+        }
+        
+        $.ajax(settings).done(function (response) {
+            console.log(response);
+            console.log(`${response[0].email}`, `${response[0].password}`);
+
+            for(let i=0; i < response.length; i++){
+                console.log(`${response[i].email}`, `${response[i].password}`);
+                if(`${response[i].email}` === loginemail && `${response[i].password}` === loginpassword){
+                    loginSuccess = true;
+                    alert("Login Success!")
+                    break;
+                }
+
+            }
+
+            if (loginSuccess === false){
+                alert("Login Failed")
+            }
+
+
+
+        });
+
+
+    });
+})
+
+
+
+
+//Sign Up Page API 
 $(document).ready(function () {
     $("#signupid").on("click",function(e) {
         e.preventDefault();
