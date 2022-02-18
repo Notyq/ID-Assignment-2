@@ -125,7 +125,6 @@ body {
 /* form */
 
 .block5 {
-  min-width: 1000px;
   min-height: 500px;
   font-family: Ubuntu;
   transition: 0.5s ease;
@@ -153,6 +152,8 @@ body {
   margin-bottom: 10px;
   background: white;
   display: flex;
+  text-align: left;
+  max-width: 100%;
 }
 
 ::placeholder {
@@ -190,21 +191,27 @@ body {
 
 /* Media Queries */
 
-@media (max-width: 1270px) {
-  .block1,
-  .block2,
-  .block3,
-  .block4 {
-    flex-basis: 38%;
-  }
-}
-
-@media (max-width: 984px) {
+@media (max-width: 1065px) {
   .block1,
   .block2,
   .block3,
   .block4 {
     flex-basis: 52%;
+  }
+}
+
+@media (max-width: 1018px) {
+  .block5content {
+    max-width: 500px;
+  }
+
+  .formname,
+  .formemail,
+  .formsubj,
+  .formmsg,
+  .formsubmit {
+    max-width: 400px;
+    text-align: center;
   }
 }
 
@@ -214,18 +221,6 @@ body {
   .block3,
   .block4 {
     flex-basis: 66%;
-  }
-
-  .formname,
-  .formemail,
-  .formsubj,
-  .formmsg {
-    border-radius: 6px;
-    padding: 20px;
-    padding-right: 200px;
-    margin-bottom: 10px;
-    background: #bcbcbc;
-    display: flex;
   }
 }
 
@@ -238,8 +233,8 @@ body {
   }
 
   .blockimage {
-    height: 70px;
-    width: 70px;
+    height: 76px;
+    width: 76px;
     left: 0px;
     margin: auto;
     padding: 10px;
@@ -252,53 +247,19 @@ body {
   }
 
   .card-content {
-    font-size: 11px;
+    font-size: 14px;
   }
 
   .block2 .social-media a {
-    color: white;
     font-size: 20px;
     margin: 20px;
     margin-left: 4px;
-  }
-
-  .formname,
-  .formemail,
-  .formsubj,
-  .formmsg {
-    border-radius: 6px;
-    padding: 20px;
-    padding-right: 130px;
-    margin-bottom: 10px;
-    background: #bcbcbc;
-    display: flex;
   }
 }
 
 @media (max-width: 455px) {
   .block5title {
     font-size: 20px;
-  }
-
-  .formname,
-  .formemail,
-  .formsubj,
-  .formmsg {
-    border-radius: 6px;
-    padding: 20px;
-    padding-right: 20px;
-    margin-bottom: 10px;
-    background: #bcbcbc;
-    display: flex;
-  }
-
-  .formsubmit {
-    border-radius: 25px;
-    padding: 10px;
-    padding-right: 20px;
-    padding-left: 20px;
-    cursor: pointer;
-    background: rgb(184, 57, 57);
   }
 }
 
