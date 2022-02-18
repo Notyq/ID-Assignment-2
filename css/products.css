@@ -126,6 +126,7 @@ body {
 }
 
 .cart-item-title {
+  max-width: 50px;
   color: #333;
   margin-left: 0.5em;
   font-size: 1.2em;
