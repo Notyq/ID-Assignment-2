@@ -63,7 +63,7 @@ body {
   opacity: 0.5;
 }
 
-.col-4 button {
+.col-4 .shop-item-button {
   color: #fff;
   border: none;
   padding-left: 5px;
@@ -76,9 +76,128 @@ body {
   font-size: 15px;
 }
 
-.col-4 button:active {
+.col-4 .shop-item-button:active {
   transform: scale(0.95);
   opacity: 1;
+}
+
+/* Cart */
+
+.section-header {
+  padding-top: 120px;
+  font-family: "Quicksand", sans-serif;
+  color: #db322a;
+  border-bottom: 5px solid #db322a;
+  padding-bottom: 10px;
+}
+
+.cart-header {
+  padding-top: 40px;
+  font-weight: bold;
+  font-size: 1.25em;
+  color: #333;
+}
+
+.cart-column {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  margin-right: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.cart-row {
+  display: flex;
+}
+
+.cart-item {
+  width: 45%;
+}
+
+.cart-price {
+  width: 20%;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.cart-quantity {
+  width: 35%;
+}
+
+.cart-item-title {
+  color: #333;
+  margin-left: 0.5em;
+  font-size: 1.2em;
+}
+
+.cart-item-image {
+  width: 75px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.btn-danger {
+  color: white;
+  background-color: #db322a;
+  border: none;
+  border-radius: 0.3em;
+  font-weight: bold;
+}
+
+.btn-danger:hover {
+  background-color: #eb5757;
+}
+
+.cart-quantity-input {
+  height: 34px;
+  width: 50px;
+  border-radius: 5px;
+  border: none;
+  background-color: #eee;
+  color: #333;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 25px;
+}
+
+.cart-row:last-child {
+  border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+  border: none;
+}
+
+.cart-total {
+  text-align: end;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.cart-total-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: black;
+  margin-right: 20px;
+}
+
+.cart-total-price {
+  color: #333;
+  font-size: 1.1em;
+}
+
+.btn-purchase {
+  display: block;
+  margin: 40px auto 80px auto;
+  font-size: 1.75em;
+  background-color: #db322a;
+  border: none;
+}
+
+.btn-purchase:hover {
+  background-color: #eb5757;
 }
 
 /* footer */

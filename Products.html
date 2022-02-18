@@ -18,7 +18,7 @@
     <script src="https://kit.fontawesome.com/4419f2b644.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="./css/products.css">
-    <script src="./js/products.js" defer></script>
+    <script src="./js/products.js" async></script>
 </head>
 
 
@@ -39,7 +39,7 @@
                     <a class="nav-item nav-link" href="Products.html">Products</a>
                     <a class="nav-item nav-link" href="LogInPage.html">Log In/Register</a>
                     <a class="nav-item nav-link" href="Contact.html"><i class="fa-solid fa-envelope"></i> Contact Us</a>
-                    <a class="nav-item nav-link" href="Cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a class="nav-item nav-link" href="#Cart"><i class="fa-solid fa-cart-shopping"></i></a>
                 </div>
 
             </div>
@@ -50,55 +50,95 @@
         <h2 class="title">Products</h2>
         <div class="row">
             <div class="col-4">
-                <img src="img/TShirt.jpeg">
-                <button>Add To Cart</button>
-                <h4>Plain T-Shirt</h4>
-                <p>$25.00</p>
+                <img class="shop-item-image" src="img/TShirt.jpeg">
+                <button class="shop-item-button" id="0">Add To Cart</button>
+                <h4 class="shop-item-title" id="title-0">Plain T-Shirt</h4>
+                <p class="shop-item-price" id="price-0">$25.00</p>
             </div>
             <div class="col-4">
-                <img src="img/TurtleneckSweater.jpg">
-                <button>Add To Cart</button>
-                <h4>Turtleneck Sweater</h4>
-                <p>$50.00</p>
+                <img class="shop-item-image" src="img/TurtleneckSweater.jpg">
+                <button class="shop-item-button" id="1">Add To Cart</button>
+                <h4 class="shop-item-title" id="title-1">Turtleneck Sweater</h4>
+                <p class="shop-item-price" id="price-1">$50.00</p>
             </div>
             <div class="col-4">
-                <img src="img/SlimFitJeans.jpg">
-                <button>Add To Cart</button>
-                <h4>Slim Fit Jeans</h4>
-                <p>$30.00</p>
+                <img class="shop-item-image" src="img/SlimFitJeans.jpg">
+                <button class="shop-item-button" id="2">Add To Cart</button>
+                <h4 class="shop-item-title" id="title-2">Slim Fit Jeans</h4>
+                <p class="shop-item-price" id="price-2">$30.00</p>
             </div>
             <div class="col-4">
-                <img src="img/JoggerPants.webp">
-                <button>Add To Cart</button>
-                <h4>JoggerPants</h4>
-                <p>$30.00</p>
+                <img class="shop-item-image" src="img/JoggerPants.webp">
+                <button class="shop-item-button" id="3">Add To Cart</button>
+                <h4 class="shop-item-title" id="title-3">JoggerPants</h4>
+                <p class="shop-item-price" id="price-3">$30.00</p>
             </div>
             <div class="col-4">
-                <img src="img/Jacket.jpeg">
-                <button>Add To Cart</button>
-                <h4>Wool Jacket</h4>
-                <p>$60.00</p>
+                <img class="shop-item-image" src="img/Jacket.jpeg">
+                <button class="shop-item-button" id="4">Add To Cart</button>
+                <h4 class="shop-item-title" id="title-4">Wool Jacket</h4>
+                <p class="shop-item-price" id="price-4">$60.00</p>
             </div>
             <div class="col-4">
-                <img src="img/graphicTee.jpeg">
-                <button>Add To Cart</button>
-                <h4>Graphic T-Shirt</h4>
-                <p>$25.00</p>
+                <img class="shop-item-image" src="img/graphicTee.jpeg">
+                <button class="shop-item-button" id="5">Add To Cart</button>
+                <h4 class="shop-item-title" id="title-5">Graphic T-Shirt</h4>
+                <p class="shop-item-price" id="price-5">$25.00</p>
             </div>
             <div class="col-4">
-                <img src="img/Bermudas.webp">
-                <button>Add To Cart</button>
-                <h4>Bermuda Shorts</h4>
-                <p>$25.00</p>
+                <img class="shop-item-image" src="img/Bermudas.webp">
+                <button class="shop-item-button" id="6">Add To Cart</button>
+                <h4 class="shop-item-title" id="title-6">Bermuda Shorts</h4>
+                <p class="shop-item-price" id="price-6">$25.00</p>
             </div>
             <div class="col-4">
-                <img src="img/BrowlineSunglasses.webp">
-                <button>Add To Cart</button>
-                <h4>BrowLine Sunglasses</h4>
-                <p>$15.00</p>
+                <img class="shop-item-image" src="img/BrowlineSunglasses.webp">
+                <button class="shop-item-button" id="7">Add To Cart</button>
+                <h4 class="shop-item-title" id="title-7">Browline Sunglasses</h4>
+                <p class="shop-item-price" id="price-7">$15.00</p>
             </div>
         </div>        
     </div>
+
+    <!--cart-->
+
+    <section class="container content-section" id = "Cart">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+            <div class="cart-row">
+                <div class="cart-item cart-column">
+                    <img class="cart-item-image" src="img/TShirt.jpeg" width="100" height="100">
+                    <span class="cart-item-title">Plain T-Shirt</span>
+                </div>
+                <span class="cart-price cart-column">$25.00</span>
+                <div class="cart-quantity cart-column">
+                    <input class="cart-quantity-input" type="number" value="1">
+                    <button class="btn btn-danger" type="button">REMOVE</button>
+                </div>
+            </div>
+            <div class="cart-row">
+                <div class="cart-item cart-column">
+                    <img class="cart-item-image" src="img/BrowlineSunglasses.webp" width="100" height="100">
+                    <span class="cart-item-title">Browline Sunglasses</span>
+                </div>
+                <span class="cart-price cart-column">$15.00</span>
+                <div class="cart-quantity cart-column">
+                    <input class="cart-quantity-input" type="number" value="2">
+                    <button class="btn btn-danger" type="button">REMOVE</button>
+                </div>
+            </div>
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$40.00</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+    </section>
 
 
     <!--footer-->
