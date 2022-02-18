@@ -48,14 +48,24 @@ $(document).ready(function () {
 
 function msgfn()
 {
+    
     var name = document.getElementById("fname").value;
     var email = document.getElementById("email").value;
     var subject = document.getElementById("subject").value;
     var msg = document.getElementById("message").value;
 
-    
+    console.log(email);
 
-    alert("Your Name: " + name + "\nYour E-Mail: " + email + "\nSubject: " + subject + "\nYour message: " + msg);
+    //code to check if email address is valid -> meaning it must contain @ + .com
+    if(email.includes("@" && ".com")){
+        alert("Your Name: " + name + "\nYour E-Mail: " + email + "\nSubject: " + subject + "\nYour message: " + msg);
+    }
+
+    else{
+        alert("Key in a valid email address");
+    }
+
+    
 
 }
 

@@ -59,11 +59,12 @@ $(document).ready(function (){
 
 
 
-
 //Sign Up Page API 
 $(document).ready(function () {
     $("#signupid").on("click",function(e) {
         e.preventDefault();
+
+        
 
         let email = $("#email").val();
         let emailconfirm = $("#emailconfirm").val();
@@ -75,46 +76,59 @@ $(document).ready(function () {
         console.log(password);
         console.log(passwordconfirm);
         
+        
 
         if(email === emailconfirm && password === passwordconfirm){
-            
 
-            let jsondata ={
-                "email": email,
-                "password": password,
+            if(email.includes("@" && ".com")){
+                
+                let jsondata ={
+                    "email": email,
+                    "password": password,
+                }
+    
+                var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": "https://idasg2databaselogin-8a41.restdb.io/rest/signuplogin",
+                "method": "POST",
+                "headers": {
+                "content-type": "application/json",
+                "x-apikey": APIKEY,
+                "cache-control": "no-cache"
+                },
+                "processData": false,
+                "data": JSON.stringify(jsondata)
+                }
+                
+                $.ajax(settings).done(function (response) {
+                console.log(response);
+                });
+
+                //window.location.href = "LogInPage.html";
+                alert("Account Created!")
+                
+
+                
+
             }
 
-            var settings = {
-            "async": true,
-            "crossDomain": true,
-            "url": "https://idasg2databaselogin-8a41.restdb.io/rest/signuplogin",
-            "method": "POST",
-            "headers": {
-            "content-type": "application/json",
-            "x-apikey": APIKEY,
-            "cache-control": "no-cache"
-            },
-            "processData": false,
-            "data": JSON.stringify(jsondata)
+            else{
+                alert("Key in a valid email address")
             }
             
-            $.ajax(settings).done(function (response) {
-            console.log(response);
-            });
-
 
         }
 
         else{
-            alert("Enter correct values");
+            alert("Confirm your email and password correctly");
         }
 
         
-        
-
-
 
     });
 
 })
+
+
 
